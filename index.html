@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+ 
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">WordPress</a>
+                <ul>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Tutorials</a>
+                        <ul>
+                            <li><a href="#">Stuff</a></li>
+                            <li><a href="#">Things</a></li>
+                            <li><a href="#">Other Stuff</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+  html{
+    background-color: black;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 300px;
+   background-position: center;
+}
+body{
+   font-size: 22px;
+   line-height: 32px;
+   color: #ffffff;
+   font-family: 'Open Sans', sans-serif;
+
+   
+}
+
+nav {
+    margin: 100px 0;
+    background-color: red;
+   
+    
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    
+   
+}
+nav ul li {
+    margin: 0;
+    display: inline-block;
+    background-color: #E64A19;
+}
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #000000;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+nav ul li:hover > ul {
+    display: block; /* Corrected 'inherit' to 'block' */
+}
+nav ul ul li {
+    min-width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+li > a:after {
+    content: ' +';
+}
+li > a:only-child:after {
+    content: '';
+}
